@@ -33,20 +33,28 @@ function Nav() {
             </button>
         </div>
         {/* touched */}
-        <div id='touched' className='absolute w-screen h-[80%] hidden flex-col px-4 py-2 bg-primary top-0 left-0'>
-            <div className='w-full flex justify-between items-center my-4'>
-                <p className='font-extrabold font-mulish text-sm'>Edit your search</p>
-                <img src={Close} alt="Close icon" className='w-6' onClick={closeSearch} />
+        <div id='touched' className='absolute w-screen h-[80%] hidden flex-col px-4 py-2 bg-primary top-0 left-0 justify-between'>
+            <div>
+                <div className='w-full flex justify-between items-center my-4'>
+                    <p className='font-extrabold font-mulish text-sm'>Edit your search</p>
+                    <img src={Close} alt="Close icon" className='w-6' onClick={closeSearch} />
+                </div>
+                <div className='drop-shadow-2xl rounded-xl border border-primaryText border-opacity-5'>
+                    <div className='my-3'>
+                        <p className='uppercase font-extrabold text-xs px-4'>location</p>
+                        <input value={Location} onChange={(e) => setLocation(e.target.value)} type="text" placeholder='Add locations' className='pb-2 pt-1 px-4 bg-transparent border-0 placeholder:text-primaryText placeholder-opacity-100 border-b border-b-primaryText border-opacity-10 w-full' />
+                    </div>
+                    <div>
+                        <p className='uppercase font-extrabold text-xs px-4'>guests</p>
+                        <input value={Guests} onChange={(e) => setGuests(e.target.value)} type="text" placeholder='Add guests' className='pb-2 pt-1 px-4 bg-transparent border-0 placeholder:text-primaryText placeholder-opacity-100 w-full' />
+                    </div>
+                </div>
             </div>
-            <div className='drop-shadow-2xl rounded-xl border border-primaryText border-opacity-5'>
-                <div className='my-3'>
-                    <p className='uppercase font-extrabold text-xs px-4'>location</p>
-                    <input value={Location} onChange={(e) => setLocation(e.target.value)} type="text" placeholder='Add locations' className='pb-2 pt-1 px-4 bg-transparent border-0 placeholder:text-primaryText placeholder-opacity-100 border-b border-b-primaryText border-opacity-10 w-full' />
-                </div>
-                <div>
-                    <p className='uppercase font-extrabold text-xs px-4'>guests</p>
-                    <input value={Guests} onChange={(e) => setGuests(e.target.value)} type="text" placeholder='Add guests' className='pb-2 pt-1 px-4 bg-transparent border-0 placeholder:text-primaryText placeholder-opacity-100 w-full' />
-                </div>
+            <div className='w-full flex justify-center items-center'>
+                <button className='bg-secondary h-12 rounded w-32 flex justify-center items-center'>
+                    <img src={Search} alt="Search Icon" className='w-6 whiteColor' />
+                    <p className='text-primary font-mulish text-sm mx-2'>Search</p>
+                </button>
             </div>
         </div>
     </div>

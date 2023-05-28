@@ -3,7 +3,7 @@ import Nav from "./components/Nav";
 
 const App = () => {
   return(
-    <div className="bg-primary h-screen w-screen flex flex-col justify-start items-start">
+    <div className="bg-primary h-full w-screen flex flex-col justify-start items-start">
       <Nav />
       <Main />
     </div>
