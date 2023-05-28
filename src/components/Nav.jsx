@@ -22,7 +22,7 @@ function Nav() {
     }
 
   return (
-    <div className=' w-screen bg-primary font-mulish text-primaryText px-4 py-6 flex flex-col justify-center items-start'>
+    <div className=' w-screen bg-primary font-mulish text-primaryText px-4 py-6 flex flex-col justify-center items-center'>
         {/* non-touched */}
         <img src={Logo} alt="Logo" className=' mb-6' />
         <div className='flex w-full drop-shadow' onClick={openSearch}>
