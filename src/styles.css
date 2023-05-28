@@ -1,0 +1,3 @@
+.colorChange {
+    filter: invert(36%) sepia(87%) saturate(968%) hue-rotate(326deg) brightness(103%) contrast(85%);
+}
