@@ -5,12 +5,12 @@ import "../styles.css"
 
 function Card({ photo, superhost, type, bed, rating, title }) {
   return (
-    <div className='w-full flex flex-col justify-center items-center text-primaryText my-4'>
+    <div className='w-full flex flex-col justify-center items-center text-primaryText my-5'>
         {/* photo */}
         <img src={photo} alt="Photo" className='rounded-2xl w-full h-60 object-cover' />
         <div className='flex justify-between w-full items-center mt-3'>
             {/* superhost */}
-            {superhost && ( <div className='text-primaryText border border-primaryText rounded-full px-2 py-1'> <p className='text-xs'>Super Host</p> </div> )}
+            {superhost && ( <div className='text-primaryText border border-primaryText rounded-full px-2 py-1'> <p className='text-[10px]'>Super Host</p> </div> )}
             <div className='flex justify-center items-center opacity-70 text-base space-x-2'>
                 {/* type */}
                 <p>{type}, </p>
