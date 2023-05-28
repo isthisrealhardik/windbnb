@@ -33,7 +33,7 @@ function Nav() {
             </button>
         </div>
         {/* touched */}
-        <div id='touched' className='absolute w-screen h-[80%] hidden flex-col px-4 py-2 bg-primary top-0 left-0 justify-between'>
+        <div id='touched' className='z-30 border-b border-b-primaryText border-opacity-20 drop-shadow absolute w-screen h-[80%] hidden flex-col px-4 py-2 bg-primary top-0 left-0 justify-between'>
             <div>
                 <div className='w-full flex justify-between items-center my-4'>
                     <p className='font-extrabold font-mulish text-sm'>Edit your search</p>
